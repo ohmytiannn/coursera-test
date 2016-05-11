@@ -30,17 +30,15 @@
     float:left
   }
   }
-  #para1{background-color: steelblue;}
-  #para3 {
+  #one #para1{background-color: steelblue;}
+  #three #para3{
     ;
     background-color: maroon
   }
-  
-  #para2 {
+  #two #para2 {
     background-color: darkgoldenrod
   }
-  
-  
+ 
 @media (max-width: 991px) and (min-width: 768px){  h4 {
     text-align: middle;
     width: 60px;
