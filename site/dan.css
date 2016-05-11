@@ -40,31 +40,7 @@
     background-color: darkgoldenrod
   }
   
- @media (max-width: 767px) {
-   h4 {
-    text-align: middle;
-    width: 60px;
-    margin: 0px;
-    border: 1px solid black;
-    float: right;
-    word-wrap: break-word;
-    background-color: steelblue;
-    color: white;
-  }
   
-  div {
-    text-align: middle;
-    width: 96%;
-    padding: 0px;
-    border: 2px solid black;
-    margin: 1%;
-    word-wrap: break-word;
-     height:5em ;
-    color: white;
-    
-  }
- }
- 
 @media (max-width: 991px) and (min-width: 768px){  h4 {
     text-align: middle;
     width: 60px;
@@ -92,3 +68,27 @@
 
   }
 	
+  @media (max-width: 767px) {
+   h4 {
+    text-align: middle;
+    width: 60px;
+    margin: 0px;
+    border: 1px solid black;
+    float: right;
+    word-wrap: break-word;
+    background-color: steelblue;
+    color: white;
+  }
+  
+  div {
+    text-align: middle;
+    width: 50%;
+    padding: 0px;
+    border: 2px solid black;
+    margin: 1%;
+    word-wrap: break-word;
+     height:5em ;
+    color: white;
+    
+  }
+ }
