@@ -1,6 +1,6 @@
 
 
-     H2 {
+     h2 {
     color: black;
     font-size: 2em;
     text-align: center
@@ -29,6 +29,7 @@
     color: white;
     float:left
   }
+  div>p{padding: 5% ;}
   }
 #para1{background-color: steelblue;}
   #one {background-color: steelblue;}
