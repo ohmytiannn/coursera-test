@@ -1,10 +1,23 @@
 
 
-div>p {height:400px;
-width: 400px;
-margin:1% auto;;
+div>p {width:682.7px;
+height: 456.7px;
+margin:1% auto;
+color:white;
+font-size:3em;
+text-align:center;
+background-color:steelblue;
+background-repeat: no-repeat;
 }
 
-h1{text-align:center}
+h1{
+font-size:5em;}
 
-#chicken{background-image:url('1.jpg')}
+#chicken{background-image:url('1.jpg');
+Background-size: 100%;}
+#pork{background-image:url('2.jpg');
+Background-size: 100%;}
+#beef{background-image:url('3.jpg');
+Background-size: 100%;}
+
+.waste{height:40px;width:100%;}
