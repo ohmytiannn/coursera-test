@@ -1,0 +1,179 @@
+<!-- This is a first example of using a template -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- include our libraries and css files -->
+
+		<title>Aquila Zoo</title>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/handlebars-v3.0.3.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="AnimalsData.js"></script>
+		<script src="assignment.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="assignment.css" rel="stylesheet">		
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+			<div class="container-fluid">	
+				<!-- button for the navbar-->
+				<div class="navbar-header">
+					<button
+					type="button" 
+					class="navbar-toggle collapsed" 
+					data-toggle="collapse"
+					data-target="#my_navbar"
+					aria-expanded="false"
+					aria-label="Right Align">
+					<span class="glyphicon glyphicon-menu-hamburger"> </span>
+					</button>
+					<a class="navbar-brand">Aquila Zoo</a>
+				</div>
+		
+				<!--container -->
+				<div class="collapse navbar-collapse "id="my_navbar">
+					<ul class="nav navbar-nav">
+						<li id="home" class="active"><a href="index.html">Home Page</a></li>
+						<li id="about" class=""><a href="#about">About</a></li>
+					</ul>
+				</div>
+			</div>	
+				<!--container -->
+		</nav>
+		<!-- put your HTML here -->
+		
+		<div class="container">
+			<div class="page-header">
+				<h1>Welcome to Aquila Zoo</h1>
+			</div>   
+			
+      <ul class="nav nav-tabs">
+            <li role="" class="active"><a href="#" id="albums-tab" >Albums</a></li>
+            <li role=""><a href="#" id="photos-tab" >Photos</a></li>
+            <li role=""><a href="#" id="slideshow-tab" >Slideshow</a></li>
+          </ul>
+      <br/><br/>
+	  
+			<div class="container">
+				<div id="content" class="container-fluid">
+				</div>
+			</div>
+		</div>
+		<script id="albums-template" type="text/x-handlebars-template">	
+			<div class="row">
+				{{#each category}}
+					<div class="col-xs-12 col-md-4"> 
+						<div class="album-thumbnail"  data-id="{{@index}}">
+							<img class="crop-img" src="{{animals.0.image1}}" alt=""/>
+							<div class="caption">
+								<h3> {{name}} </h1>
+								<p>{{animals.length}} photos</p>
+							</div>
+						</div>
+					</div>
+				{{/each}}	
+			</div>
+		</script>
+		<script id="photos-template" type="text/x-handlebars-template">
+		  <div class="row">
+	
+			{{#each animals}}
+			<div class="col-xs-12 col-md-3"> 
+			 <div class="photo-thumbnail"  data-id="{{@index}}">
+				<img class="crop-img" src="{{image1}}" alt=""/> 
+				
+		
+				 <div class="caption">
+					<h3>{{name}}</h3>
+					<p>{{description}}</p>
+				 </div>
+			  </div>  
+			</div> <!-- / col -->
+			{{/each}}
+		
+		  </div> <!-- / row -->
+		</script>
+		<script id="photo-template" type="text/x-handlebars-template">
+		  <div class="row">
+
+			
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					 <h4 class="modal-title">Modal Header</h4>
+				  </div>
+				  <div class="modal-body"> 
+					<image class="large-img" src={{image1}} >
+					<h3 id="fd">{{name}}</h3>
+				  </div>
+				  <div class="modal-footer">
+					
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+
+			  </div>
+			</div>			
+		</div>		
+				
+		
+		</script>
+		<script id="slideshow-template" type="text/x-handlebars-template">
+		  <div class="row">
+			<div class="col-md-6">
+
+			  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+
+		  
+			   <!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+
+				  {{#each animals}}
+					<div class="item {{#if @first}}active{{/if}}">
+						<img class="carousel-img" src="{{image1}}" alt=""/>
+						<img class="carousel-img" src="{{image2}}" alt=""/> 						
+						<div class="carousel-caption">
+						  <h3>{{name}}</h3>
+						</div>
+					</div> <!-- / carousel item -->
+				  {{/each}}
+
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+
+			</div> <!-- / carousel --> 
+		  </div> <!-- / col -->
+		</div> <!-- / row -->
+		</script>
+	</body>
+</html>
