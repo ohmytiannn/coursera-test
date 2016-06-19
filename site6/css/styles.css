@@ -1,0 +1,40 @@
+.box{height:500px;
+     padding-top:50px}
+
+  .affix {
+      top: 0;
+      width: 100%;
+    z-index: 9999 !important;
+  }
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+.height{ max-height:203px}
+
+  .navbar {
+      margin-bottom: 0px;
+  }
+.animate	{ 
+	width: 100vw; 
+	height: 200px; 
+	background-image: url("https://pixabay.com/static/uploads/photo/2016/06/15/00/34/background-1457938_960_720.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 60s linear infinite;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+.underline{text-decoration: underline;}
+.aligntothecenter{text-align:center;
+ padding:50px 0px;}
+stay{height:500px;}
+#sectionone{
+  background-image: url("https://pixabay.com/static/uploads/photo/2015/12/01/15/43/black-1072366_960_720.jpg");
+  color:white;}
+.lobster{font-family: 'Lobster', cursive;}
+.toppad{padding:100px 0px 0px 0px;}
+.body{position:relative;}
