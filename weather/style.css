@@ -3,3 +3,9 @@
 body{  background-image: url("https://pixabay.com/static/uploads/photo/2015/12/01/15/43/black-1072366_960_720.jpg"); 
 color:white;background-repeat: no-repeat; background-size:100vw 100vh;
  }	
+ @media (max-width: 768px){
+ 	#icon{width:70vw;}
+ 	#weather{font-size:5.9vw;}
+ 	#temp{font-size:5.9vw;}
+ 	#toggletemp{font-size:5.9vw;}
+ }
