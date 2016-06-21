@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Wikipedia Viewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.js"></script>
+  </head>
+  <body>
+    <div class="backgroundimage">
+    <div class="container">
+      <h1 class="text-center white"><b>Wikipedia Viewer</b></h1>
+    <form id="frm1">
+      <input type="text" class="form-control" id="searchinput">
+    </form>
+    <div class="btn-group btn-group-justified">
+      <a class="btn btn-success" id="random">Random Article</a>
+      <a class="btn btn-danger" id="searchbutton">Search</a>
+    </div>
+    </div>
+    <div id="results"><div>
+      </div>
+      
+    <script id="result-template" type="text/x-handlebars-template">
+      
+      <div class="container">
+       
+          {{#each animals}}
+           <div class="panel panel-info marginbottom">
+          <div class="panel-heading"><h1><b><a href={{url}}>{{title}}</a></b></h1></div>
+          <div class="panel-body"><h4>{{extract}}</h4></div>
+          </div> 
+          {{/each}}
+        
+      </div>
+      
+    </script>  
+    
+  </body>
+</html>
