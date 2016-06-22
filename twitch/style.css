@@ -1,0 +1,10 @@
+
+header{font-size:4.0vh;font-weight:bold;
+  text-shadow:  3px 3px 2px #6441a5;color:white;
+}
+.bold{font-weight:bold;}
+body{background-color:#6441a5;}
+img{ border-radius: 25px;}
+div{  font-size: 3.0vh;
+text-align: center;color:#6441a5;font-weight:bold;}
+.btn{color:#6441a5;font-weight:bold;}
