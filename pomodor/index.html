@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <title>Twitch API</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="style.css">
+	    <script src="script.js"></script>
+	    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.js"></script>
+  	</head>
+
+	<body ng-app="pomodoro" class="text-center">
+		<h1 id="bold">Pomodoro Clock</h1>
+		<div class="container">
+			<h2>Break</h2>
+			<p id="one"  class="fontsize1"  ></p>
+			<button class="btn btn-primary" info="1">-</button>
+			<button class="btn btn-primary" info="1">+</button>
+		</div>
+		<div class="container">
+			<h2>Session</h2>
+			<p id="two" class="fontsize1" ></p>
+			<button class="btn btn-primary" info="2">-</button>
+			<button class="btn btn-primary" info="2">+</button>
+			<hr>
+		</div>
+		
+		<div class="container">
+			<a class="btn btn-danger"id="start">Start</a> 
+			<a class="btn btn-warning" id="reset">Reset</a>
+			<h2 id="event">Session Time: </h2>
+			
+		</div>
+
+	</body>
+</html>
