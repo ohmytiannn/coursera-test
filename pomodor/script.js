@@ -11,13 +11,13 @@ $(document).ready(function(){
 			if ($(this).attr('info')=="1"){
 				breakk=breakk-1;
 				$('#one').text(breakk);
-				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("start");
+				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("Start");
 												if (sessionevent!==true){$('#event').text('Break Time:'+breakk)}
 			}
 			else{
 				session=session-1
 				$('#two').text(session);
-				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("start");
+				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("Start");
 								if (sessionevent===true){$('#event').text('Session Time:'+session)}
 			}
 		}
@@ -25,14 +25,14 @@ $(document).ready(function(){
 			if ($(this).attr('info')=="1"){
 				breakk=breakk+1;
 				$('#one').text(breakk);
-				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("start");
+				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("Start");
 																if (sessionevent!==true){$('#event').text('Break Time:'+breakk)}
 				
 			}
 			else{
 				session=session+1;
 				$('#two').text(session);
-				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("start");
+				;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("Start");
 				if (sessionevent===true){$('#event').text('Session Time:'+session)}
 			}
 		}	
@@ -52,7 +52,7 @@ $("#start").click(function(){
   else{clearInterval(a)}
 																												 },1000)
 
-		if (runtimer===false){;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("start");}
+		if (runtimer===false){;runtimer=true; $('#start').attr("class","btn btn-danger") ;$('#start').text("Start");}
 	else{runtimer=false; $('#start').attr("class","btn btn-success") ;$('#start').text("Stop");}
 	console.log(runtimer,breakk)
 	});
