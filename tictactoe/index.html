@@ -1,0 +1,72 @@
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <title>TTT</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="style.css">
+	    <script src="script.js"></script>
+	    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.js"></script>
+  	</head>
+
+<body>
+	
+	
+	
+	<h1 class="text-center">Tic-Tac-Toe</h1>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<div id="one" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down left right rights downs" value="1"></div>
+			<div id="two" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down downs" value="2"></div>
+			<div id="three" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down left right lefts downs" value="3"></div>
+			<div id="four" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box left right rights downs" value="4"></div>
+			<div id="five" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box  " value="5"></div>
+			<div id="six" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box left right lefts downs " value="6"></div>
+			<div id="seven" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down left right rights ups" value="7"></div>
+			<div id="eight" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down ups " value="8"></div>
+			<div id="nine" class="container col-xs-4 col-sm-4 col-md-4 col-xl-4 box up down left right lefts ups" value="9"></div>
+			<!-- Trigger the modal with a button -->
+			<div class="container">
+		<button type="button" class="btn btn-info btn-lg bordertop" data-toggle="modal" data-target="#myModal" id="choosetoken">Choose Token</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					 <h4 class="modal-title">Tic-Tac-Toe</h4>
+				</div>
+				<div class="modal-body">
+					<p>X or O?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" id="x">X</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal" id="o">O</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</body>	
+</html>

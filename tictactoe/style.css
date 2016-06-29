@@ -1,0 +1,15 @@
+
+.box{border-style:solid;
+			border-color:transparent;
+			border-width:0 0 0 0;
+	height:15vw;
+			}
+.up{border-top-width:1px}
+.down{border-bottom-width:1px} 
+.left{border-left-width:1px}
+.right{border-right-width:1px}
+.ups{border-top-color:black;}
+.downs{border-bottom-color:black;}
+.lefts{border-left-color:black;}
+.rights{border-right-color:black;}
+.bordertop{margin-top:5vw}

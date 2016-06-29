@@ -1,0 +1,139 @@
+$(document).ready(function(){
+	var tokens=["X","O"]
+	var playertoken=""
+	var comptoken=""
+	var counter=0;
+	var winzcounter=0;
+	function one(){
+		 return $('#one').text(comptoken);
+		
+	}
+	function two(){
+	 return	$('#two').text(comptoken);
+		
+	}
+	function three(){
+	 return	$('#three').text(comptoken);
+		
+	}
+	function four(){
+	return	$('#four').text(comptoken);
+
+	}
+	function five(){
+		return	$('#five').text(comptoken);
+	
+	}
+	function six(){
+		return	$('#six').text(comptoken);
+	
+	}
+	function seven(){
+		return	$('#seven').text(comptoken);
+	
+	}
+	function eight(){
+		return	$('#eight').text(comptoken);
+	
+	}
+	function nine(){
+		return	$('#nine').text(comptoken);
+	
+	}
+	
+	
+	
+
+	function win(){
+		winzcounter++
+		console.log(winzcounter)
+		if (winzcounter<2){
+		alert("Computer Wins");
+			}
+		comptoken="";
+		one();
+		two();
+		three();
+		four();
+		five();
+		six();
+		seven();
+		eight();
+		nine();
+		$('#choosetoken').show();
+		
+	}
+		
+	
+	function thirdstepa(){
+		console.log("3",counter)
+		var checker=$('#five').text();
+		if (counter%4==3){
+		if (checker!=playertoken){
+			five();
+			win()
+			
+			}
+		}
+	}
+	
+	function thirdstepb(){
+	
+	}
+	
+	
+	
+	function secondstep(){
+		console.log("2",counter)
+		var checker=$("#nine").text()
+		if(counter==1){
+		if (checker!=playertoken){ 
+			nine() ;
+		$('.box').click(function(){
+			$(this).text(playertoken);
+			counter++
+			return thirdstepa();
+		})}
+		else{ seven() ;
+		$('.box').click(function(){
+			$(this).text(playertoken);
+			counter++
+			return thirdstepb()
+		})		
+				
+		}
+		}
+		
+	}
+	
+	function firststep(){
+		one();
+		$('.box').click(function(){ 
+			$(this).text(playertoken);
+			counter++
+			return secondstep()})	
+		
+	}
+	
+	
+$('#x').click(function(){
+	$('#choosetoken').hide();
+	playertoken=tokens[0];
+	comptoken=tokens[1];
+	new firststep();
+	counter=0
+	winzcounter=0
+})
+$('#o').click(function(){
+	$('#choosetoken').hide();
+	playertoken=tokens[1];
+	comptoken=tokens[0];
+	new firststep();
+	counter=0
+	winzcounter=0
+})
+
+
+
+
+});
