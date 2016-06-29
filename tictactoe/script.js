@@ -69,13 +69,13 @@ $(document).ready(function(){
 		}
 	}
 	function fourthstepae(){
-				if(playa.filter(function(age){return age==0}).length===7 & playa[2]===0){
-			two();
+				if(playa.filter(function(age){return age==0}).length===7 & playa[7]===0){
+			seven();
 			win();
 		}
 		else{
-			five();
-			win();
+			three();
+			draw();
 		}
 	}
 		function fourthstepbb(){
