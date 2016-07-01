@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <title>Simon Game</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="style.css">
+	    <script src="script.js"></script>
+	    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.js"></script>
+  	</head>
+	<body>
+		<div class="alert alert-success">
+	  <a href="#" class="close" data-dismiss="alert">&times;</a>
+	 Alert
+	</div>
+			<div>
+				<h2 class="strict"></h2>
+		</div>
+		<div class="container text-center topmargin">
+			<div>
+				<a class="btn btn-success game topleft disabled" value="1">		
+				</a>
+				<a class="btn btn-danger game topright disabled" value="2" >		
+				</a>
+			</div>
+			<div>
+				<a class="btn btn-warning game btmleft disabled" value="3">		
+				</a>
+				<a class="btn btn-primary game btmright disabled" value="4">		
+				</a>
+			</div>
+		</div>
+		<div class="circle container text-center">
+			<h2><b>Simon</b></h2>
+			<a class="btn btn-info btn-inner disabled round" id="restart"></a>
+			<a class="btn btn-danger btn-inner disabled" id="start"><span class="glyphicon glyphicon-play-circle"></span></a>
+			<a class="btn btn-warning btn-inner disabled" id="strict"><b>N</b></a>
+			<a class="btn btn-success btn-inner " id="onoff"><span class="glyphicon glyphicon-off"></span>			</a>
+		</div>	
+
+	<audio id="blue">
+	  <source src='https://s3.amazonaws.com/freecodecamp/simonSound1.mp3'type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+		<audio id="green">
+	  <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+		<audio id="red">
+	  <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+		<audio id="yellow">
+	  <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+		
+		
+		
+	</body>
+</html>
