@@ -33,7 +33,7 @@ var CommentBox = React.createClass({
 });
 var CommentList = React.createClass({
   render: function() {
-    var commentNodes = this.props.datafromlist.map(function(comment) {
+    var commentNodes = this.props.data.map(function(comment) {
       return (
         <Comment author={comment.author} key={comment.id}>
           {comment.text}
