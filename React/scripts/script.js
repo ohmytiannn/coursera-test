@@ -76,7 +76,7 @@ var Comment = React.createClass({
   }
 });
 ReactDOM.render(
-   <CommentBox url="/coursera-test/React/api/comments" pollInterval={2000} />,
+   <CommentBox url="/coursera-test/React/api/comments.json" pollInterval={2000} />,
 
   document.getElementById('content')
 );
