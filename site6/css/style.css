@@ -1,4 +1,4 @@
-.box{height:500px;
+.box{height:700px;
      padding-top:50px}
 
   .affix {
@@ -10,7 +10,7 @@
      position: relative;
      top: 50px;
   }
-.height{ max-height:400px}
+.height{ max-height:200px}
 
   .navbar {
       margin-bottom: 0px;
