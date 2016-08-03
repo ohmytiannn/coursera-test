@@ -1,4 +1,4 @@
-.box{height:500px;
+.box{;
      padding-top:50px}
 
   .affix {
@@ -36,5 +36,6 @@ stay{height:500px;}
   background-image: url("https://pixabay.com/static/uploads/photo/2015/12/01/15/43/black-1072366_960_720.jpg");
   color:white;}
 .lobster{font-family: 'Lobster', cursive;}
-.toppad{padding:100px 0px 0px 0px;}
+.toppad{padding:20vh 0px 0px 0px;}
+.bottompad{padding:0vh 0vh 20vh 0vh;}
 .body{position:relative;}
