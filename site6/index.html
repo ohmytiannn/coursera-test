@@ -1,121 +1,225 @@
-<html>	
-	<head>
-		<meta charset="utf-8">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="style.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://fb.me/react-15.1.0.min.js"></script>
+  <script src="https://fb.me/react-dom-15.1.0.min.js"></script>   
+  <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-		<!-- include our libraries and css files -->
-
-		<title>Portfolio</title>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/style.js"></script>
-
-		<link href="css/style.css" rel="stylesheet">		
-
-	</head>
-
-
-
-<body data-spy="scroll" data-target=".navbar" data-offset-top="50">
-
-  <nav class="navbar navbar-inverse" data-spy="affix" >
-    <div class="container-fluid">
-      <div class="navbar-header">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="#t">D.T.W.D</a>
-      </div>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Daniel Tian</a>
+    </div>
+    <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li ><a href="#t">Home</a></li>
-          <li><a href="#sectionone">Introduction</a></li>
-          <li><a href="#sectiontwo">Progress</a></li>
-          <li><a href="#sectionth">Portfolio </a></li>
-        </ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+         </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <div id="sectionone" class="container-fluid box blue">
-    <h1 class="text-center toppad lobster">Daniel </h1>
+<div id="introduction" class="container-fluid">
+    <h1 class="text-center toppad">Daniel Tian</h1>
     <hr>
-    <h3 class="text-center">Web developer, Photographer, Aspiring Engineer</h3>
+    <h3 class="text-center ">Web developer, Photographer, Aspiring Engineer</h3>
     <br>
     <div class="btn-group btn-group-justified bottompad">
       <a href="https://www.instagram.com/0hmytiannn/"  class="btn btn-primary" target='_blank'>Instagram</a>
       <a href="https://github.com/ohmytiannn/coursera-test" class="btn btn-default" target='_blank'>Github</a>
       <a href="https://www.freecodecamp.com/ohmytiannn"  class="btn btn-success" target='_blank'>FCC</a>
     </div>
-  </div>
+</div>
+<div id="progress" class="container-fluid">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">
+           <h2><b>My Web Development Journey</b></h2>
 
-
-  <div id="sectiontwo" class="container-fluid box yellow">
-    <div class="panel panel-default">
+        </div>
+        <div class="panel-body">
+          <h5>I started learning about Web development and responsive design on Coursera in May 2016. Recently(July 1st) , I completed the front-end web development course on FreeCodeCamp.com
+          <h4><b>Front-End Web Development Certificate Progress</b></h4>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-success active progress-bar-striped" role="progressbar" aria-valuenow="100"
+    aria-valuemin="0" aria-valuemax="100" style="width:100%">100%
+            <span class="sr-only">100% Complete</span>    
+            </div>
+          </div>
+          <h4><b>Data Visualisation Certificate(D3js and ReactJS) Progress</b></h4>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-warning active progress-bar-striped" role="progressbar" aria-valuenow="50"
+    aria-valuemin="0" aria-valuemax="50" style="width:50%">50%
+            <span class="sr-only">50% Complete</span>
+          
+            </div>
+          </div>
+          <p>I have learnt the following Web Development languages/libraries/frameworks:</p><p> HTML, CSS, Bootstrap, Jquery, Javascript, AngularJs and Handlebars.</p>
+          <p>I also have knowledge and program frequently with Python, SQL and Matlab.</p>
+          <p>I plan to learn more frameworks such as ReactJS and MeteorJS.</p>
+        </div>
+      </div>
+</div>
+<div id="portfolio" class="container-fluid">
+  <div class="panel panel-default">
       <div class="panel-heading text-center">
-         <h2><b>My Web Development Journey</b></h2>
+        <h2><b>Portfolio</b></h2>
+        <div class="btn-group btn-group-justified btn-group-vertical">
+          <a type="button" class="btn btn-default text-center" id="Featured">Featured</a>
+          <a type="button" class="btn btn-default text-center" id="WebApps">Web Apps</a>
+          <a type="button" class="btn btn-default text-center" id="Photography"><span class="glyphicon glyphicon-camera"></span></a>
+        </div>
       </div>
       <div class="panel-body">
-        <h5>I started learning about Web development and responsive design on Coursera in May 2016. Recently(July 1st) , I completed the front-end web development course on FreeCodeCamp.com
-        <h4><b>Front-End Web Development Certificate Progress</b></h4>
-        <div class="progress">
-          <div class="progress-bar  progress-bar-success active progress-bar-striped" role="progressbar" aria-valuenow="100"
-  aria-valuemin="0" aria-valuemax="100" style="width:100%">100%
-          <span class="sr-only">100% Complete</span>
-        
-          </div>
-        </div>
-        <h4><b>Data Visualisation Certificate(D3js and ReactJS) Progress</b></h4>
-        <div class="progress">
-          <div class="progress-bar  progress-bar-warning active progress-bar-striped" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="50" style="width:50%">50%
-          <span class="sr-only">50% Complete</span>
-        
-          </div>
-        </div>
-        <p>I have learnt the following Web Development languages/libraries/frameworks:</p><p> HTML, CSS, Bootstrap, Jquery, Javascript, AngularJs and Handlebars.</p>
-        <p>I also have knowledge and program frequently with Python, SQL and Matlab.</p>
-        <p>I plan to learn more frameworks such as ReactJS and MeteorJS.</p>
+           <div id="example"></div>
       </div>
-    </div>
-  </div>
-  <!-- Wrapper for slides -->
-  <div id="sectionth" class="container-fluid box">
-    <div class="panel panel-default">
-      <div class="panel-heading aligntothecenter">
-        <h2><b>Portfolio</b></h2></div>
-      <div class="panel-body">
-      <a href="http://ohmytiannn.github.io/coursera-test/wikiview/">
-        <img src="images/aa.jpg" alt="Chania" class="img-responsive col-md-6">
-      </a>
-      <a href="http://codepen.io/ohmytiannn/full/QEKJow/">
-        <img src="images/ab.jpg" alt="Chania" class="img-responsive col-md-6">
-      </a>
-      <a href="http://ohmytiannn.github.io/coursera-test/twitch/">
-        <img src="images/ac.jpg" alt="Flower" class="img-responsive col-md-6">
-      </a>
-      <a href="https://codepen.io/ohmytiannn/full/qNmNQO/">
-        <img src="images/add.jpg" alt="Flower" class="img-responsive col-md-6"> 
-      </a>
-      <a href="http://codepen.io/ohmytiannn/full/mEKpAp/">
-        <img src="images/ae.jpg" alt="Flower" class="img-responsive col-md-6">
-      </a>
-      <a href="https://codepen.io/ohmytiannn/full/VjArjm/">
-        <img src="images/af.jpg" alt="Flower" class="img-responsive col-md-6"> 
-      </a>
         <div class="panel-footer">Panel Footer</div>
-      </div>
+      
     </div>
    </div> 
     <div class="panel panel-default">
       <div class="panel-body"><h4>Created by, Tian W.D.</h4></div>
     </div>
+</div>
+    
+    <script type="text/babel">
+var Galleryshell =React.createClass({
+        web: function() {
+      var webObj = [
+          {image:"images/af.jpg",url:"https://codepen.io/ohmytiannn/full/VjArjm/"},
+          {image:"images/add.jpg",url:"https://codepen.io/ohmytiannn/full/qNmNQO/"},
+            {image:"images/ag.jpg",url:"http://codepen.io/ohmytiannn/full/MeJPVG/"},
+          {image:"images/aa.jpg",url:"http://ohmytiannn.github.io/coursera-test/wikiview/"},
+          {image:"images/ab.jpg",url:"http://codepen.io/ohmytiannn/full/QEKJow/"},
+          {image:"images/ac.jpg",url:"http://ohmytiannn.github.io/coursera-test/twitch/"},
+          
+          {image:"images/ae.jpg",url:"http://codepen.io/ohmytiannn/full/mEKpAp/"}
+          
+        
+      ];
+        this.setState({data: webObj})
+                                $('#Featured').attr("class",
+    "btn btn-default text-center");
+                $('#WebApps').attr("class",
+    "btn btn-default text-center active");
+                $('#Photography').attr("class",
+    "btn btn-default text-center ");
+        },
+        featured: function() {
+      var featuredObj= [
+          {image:"images/af.jpg",url:"https://codepen.io/ohmytiannn/full/VjArjm/"},
+          {image:"images/add.jpg",url:"https://codepen.io/ohmytiannn/full/qNmNQO/"},
+            {image:"images/ag.jpg",url:"http://codepen.io/ohmytiannn/full/MeJPVG/"},
+          {image:"images/aa.jpg",url:"http://ohmytiannn.github.io/coursera-test/wikiview/"},
+          {image:"images/ab.jpg",url:"http://codepen.io/ohmytiannn/full/QEKJow/"},
+          {image:"images/ac.jpg",url:"http://ohmytiannn.github.io/coursera-test/twitch/"},
+          
+          {image:"images/ae.jpg",url:"http://codepen.io/ohmytiannn/full/mEKpAp/"},
+          {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"},
+          {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"},
+          {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"}
+      ];
+        this.setState({data: featuredObj})
+                        $('#Featured').attr("class",
+    "btn btn-default text-center active");
+                $('#WebApps').attr("class",
+    "btn btn-default text-center");
+                $('#Photography').attr("class",
+    "btn btn-default text-center ");
+        
+        },
+        photo: function() {
+      var photoObj =  [
+           {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"},
+           {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"},
+           {image:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg",url:"http://ohmytiannn.github.io/coursera-test/images/chalk.jpg"}
+      ];
+            this.setState({data: photoObj})
+                $('#Featured').attr("class",
+    "btn btn-default text-center");
+                $('#WebApps').attr("class",
+    "btn btn-default text-center");
+                $('#Photography').attr("class",
+    "btn btn-default text-center active");
+        },
+        runner: function() {
+                $('#Featured').click(
+    this.featured);
+                $('#WebApps').click(
+    this.web);
+                $('#Photography').click(
+    this.photo);        
 
-	</body>
+
+        },
+        getInitialState: function() {
+    return {data: []};
+  },
+        componentDidMount: function() {
+    this.featured();
+    this.runner();
+  },
+
+
+        render: function (){
+          return (
+            <Gallery data={this.state.data}></Gallery>
+          );
+        }
+
+      });
+
+
+      var Gallery =React.createClass({
+
+        render: function (){
+            var node=this.props.data.map(function(comment) {
+            return (
+              <Recipe image={comment.image} url={comment.url}>
+              </Recipe>
+            );
+          });
+          return(
+          <div className="">
+            {node}
+          </div>
+            )
+        }
+      });          
+
+      var Recipe =React.createClass({
+         render: function (){
+            return(
+                <a href={this.props.url}>
+                  <img src={this.props.image} alt="" className="img-responsive col-md-6"   />
+                </a>
+            )
+         }
+      });
+
+      ReactDOM.render(
+        <Galleryshell  />,
+        document.getElementById('example')
+      );
+    </script>
+
+
+</body>
 </html>

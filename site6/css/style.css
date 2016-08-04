@@ -1,41 +1,16 @@
-.box{;
-     padding-top:50px}
-
-  .affix {
-      top: 0;
-      width: 100%;
-    z-index: 9999 !important;
+  body {
+      position: relative;
   }
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
-  }
-.height{ max-height:200px}
-
-  .navbar {
-      margin-bottom: 0px;
-  }
-.animate	{ 
-	width: 100vw; 
-	height: 200px; 
-	background-image: url("https://pixabay.com/static/uploads/photo/2016/06/15/00/34/background-1457938_960_720.png");
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-
-	animation: animatedBackground 60s linear infinite;
-}
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
-.underline{text-decoration: underline;}
-.aligntothecenter{text-align:center;
- padding:50px 0px;}
-stay{height:500px;}
-#sectionone{
+  #introduction {padding-top:50px;;color: #fff; background-color: #1E88E5;
+ 
   background-image: url("https://pixabay.com/static/uploads/photo/2015/12/01/15/43/black-1072366_960_720.jpg");
   color:white;}
-.lobster{font-family: 'Lobster', cursive;}
+    #progress {padding-top:50px;color: #000000; background-color: white;}
+  #portfolio {padding-top:50px;color: #fff; background-color: white;}
 .toppad{padding:20vh 0px 0px 0px;}
 .bottompad{padding:0vh 0vh 20vh 0vh;}
-.body{position:relative;}
+@media screen and (min-width: 983px) {
+    #introduction {
+         background-size:100%;
+    }
+}
