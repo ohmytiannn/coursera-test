@@ -3,14 +3,16 @@
   }
   #introduction {padding-top:50px;;color: #fff; background-color: #1E88E5;
  
-  background-image: url("https://pixabay.com/static/uploads/photo/2015/12/01/15/43/black-1072366_960_720.jpg");
+  background-image: url("http://ohmytiannn.github.io/coursera-test/images/chalk.jpg");
   color:white;}
     #progress {padding-top:50px;color: #000000; background-color: white;}
   #portfolio {padding-top:50px;color: #fff; background-color: white;}
 .toppad{padding:20vh 0px 0px 0px;}
 .bottompad{padding:0vh 0vh 20vh 0vh;}
+.btn{height:50px;}
 @media screen and (min-width: 983px) {
     #introduction {
          background-size:100%;
     }
 }
+
